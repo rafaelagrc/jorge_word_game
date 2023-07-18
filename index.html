@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="sketch.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="homepage">
+    <h1>Welcome to the Word Game!</h1>
+    <button id="startButton">Start Game</button>
+  </div>
+  <div id="playerNames">
+    <h2>Enter Player Names</h2>
+    <input type="text" id="playerName" placeholder="Enter player name" />
+    <button onclick="addPlayer()">Add Player</button>
+    <ul id="playerList"></ul>
+    <button onclick="startGamePlay()">Start Game</button>
+  </div>
+  <div id="game" style="display: none;">
+    <h2>QUEM É O JORGE</h2>
+    <p id="playerNameText"></p>
+    <button onclick="showWord()" id="confirmBtn" disabled>Confirm</button>
+    <p id="word"></p>
+    <button onclick="nextPlayer()" id="nextPlayerBtn" style="display: none;">Next Player</button>
+    <button onclick="exitGame()" id="exitButton">Exit Game</button>
+  </div>
+  <div id="nextPlayer" style="display: none;">
+    <!-- <h2>Next Player</h2> -->
+    <!-- <p id="nextPlayerName"></p> -->
+    <!-- <button onclick="startCountdown()">Start</button> -->
+  </div>
+  <div id="countdown" style="display: none;">
+    <h2>Countdown</h2>
+    <p id="countdownTimer"></p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

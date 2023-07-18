@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  button {
+    display: block;
+    margin: 10px auto;
+  }
+  
+  #homepage, #playerNames, #game, #nextPlayer, #countdown {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #word {
+    text-align: center;
+  }
+  
+  #countdown {
+    text-align: center;
+  }
+  
+
+  .add-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Delete Player Button */
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #d32f2f;
+  }
